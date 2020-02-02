@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	</style>
+
+	<script type="text/javascript">
+
+		let test = 20; <- var 와는 달리 숫자형일 때
+
+		자료형
+
+		// let test = 임태완; <- 문자형을 넣으면 에러가 발생
+
+		console.log(test)
+
+		// var test3 = 20;
+		// var test3 + '임태완';
+
+		const key = 'asdfasdfdsasdg'; <- 문자형을 넣으면 에러가 발생
+
+		//값을 주는 행위 = 할당
+		key = '김건희'
+
+		//숫자형 - string
+		let a = 1;
+		let b = 2;
+		console.log(a + b);
+		console.log(a * b);
+		console.log(a - b);
+		console.log(a / b); <- 몫 만 나옴, 나누기 했을 때
+		console.log(a % b); <- 나머지 도 나옴, 나누기 했을 때
+
+		//문자형 - string
+		let aa = '임';
+		let bb = '태';
+		let cc = '완';
+		console.log(aa + bb + cc); <- 임태완 이 나옴
+		console.log(aa * bb * cc); <- 에러 발생
+
+		let alert =	'20'; <- 에러 발생, 예약어는 사용 불가
+
+		console.log(a + aa); <- 임1 문자열이 우선시 됩니다
+
+
+		[] = 리스트 = 배열 = 행렬
+		[1,2]
+
+		let a = [];
+		.a의 자료형은 앞으로 리스트
+		.변수 a에는 값이 차곡차곡 들어갈 수 있다
+		a = [1,2,3,4,5,6,7,8]
+
+		a.push(1) <- [1]
+		a.push(2) <- [1,2]
+		a.push(3) <- [1,2,3]
+
+
+	</script>
+
+</head>
+<body>
+
+	<button onclick="hey('안녕하세요')">버튼</button>
+
+</body>
+</html>

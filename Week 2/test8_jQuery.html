@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>JQuery 연습하고 가기!</title>
+
+  <!-- JQuery를 import 합니다 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <script>
+
+    $.ajax({
+      type: "GET",
+      url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99",
+      data: {},
+      success: function(response){
+
+        let row = response["RealtimeCityAir"]["row"];
+        console.log(row);
+        let target_data = '';
+        for (let i = 0; i < row.length; i++)
+          if (row[i]['MSRSTE_NM'] == '금천구'){
+            console.log(row[i])
+            target_data = row[i]['IDEX_MVL'];
+          }
+          console.log(target_data);
+
+        }
+      })
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>
