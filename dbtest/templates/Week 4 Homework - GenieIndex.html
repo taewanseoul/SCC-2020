@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!— JQuery를 import 합니다 —>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $.ajax({
+		  type: "POST"
+		  url: "/new",
+		  data: {
+		    rank_give:99,
+		    title_give:"title",
+		    artist_give:"artist"
+		  },
+		  success: function(res){
+		    console.log(res);
+          },
+          error: function(err){
+            console.log(err)
+		  }
+		})
+    </script>
+
+</head>
+<body>
+
+<h1 style="color:blue">Genie Music Chart</h1>
+
+</body>
+</html>
